@@ -3,7 +3,7 @@ import Foundation
 func main() {
     let fileManager = FileManager.default
     let currentDir = URL(fileURLWithPath: fileManager.currentDirectoryPath)
-    let schemasDir = currentDir.appendingPathComponent("Schema")
+    let schemasDir = currentDir.appendingPathComponent("Schemas")
     let sourceDir = currentDir.appendingPathComponent("Sources")
     let objectModelDir = sourceDir.appendingPathComponent("ObjectModel")
     let extensionDir = sourceDir.appendingPathComponent("Extension")
