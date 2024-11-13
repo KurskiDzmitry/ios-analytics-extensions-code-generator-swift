@@ -1,0 +1,63 @@
+{
+    "id": "http://json-schema.org/RebatesSearchItemPageViewEvent",
+    "title": "RebatesSearchItemPageViewEvent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "description": "Rebates Search Item Page View Event",
+    "type": "object",
+    "properties": {
+        "siteSection": {
+            "description": "RAT Site section, key: `ssc`, constant value `search`",
+            "const": "search",
+            "key": "ssc",
+            "type": "string",
+            "optional": "false"
+        },
+        "pageType": {
+            "description": "Page type for the search iten pageview, key: `pgt`, constant value `search`",
+            "const": "search",
+            "key": "pgt",
+            "type": "string",
+            "optional": "false"
+        },
+        "pageName": {
+            "description": "Page name for the search item pageview, key: `pgn`, constant value `shop_item`",
+            "const": "shop_item",
+            "key": "pgn",
+            "type": "string",
+            "optional": "false"
+        },
+        "productItems": {
+            "description": "Items for the search query",
+            "type": "objectArray",
+            "optional": "false",
+            "items": {
+                "title": "productItem",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Item Id, key: `itemid`",
+                        "type": "string",
+                        "key": "itemid",
+                        "optional": "false"
+                    },
+                    "price": {
+                        "description": "Item price, key: `price`",
+                        "type": "number",
+                        "key": "price",
+                        "optional": "false"
+                    }
+                }
+            }
+        },
+        "optionalCustomParameters": {
+            "description": "Add the optional values needed to be present as part of custom parameters, key: cp.`keyname`",
+            "type": "dictionary",
+            "optional": "true"
+        },
+        "optionalParameters": {
+            "description": "Add the optional values needed to be present as part of first level of parameters, `key: `keyname``",
+            "type": "dictionary",
+            "optional": "true"
+        }
+    }
+}
