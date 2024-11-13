@@ -52,11 +52,13 @@
         "optionalCustomParameters": {
             "description": "Add the optional values needed to be present as part of custom parameters, key: cp.`keyname`",
             "type": "dictionary",
+            "key": "cp.keyname",
             "optional": "true"
         },
         "optionalParameters": {
             "description": "Add the optional values needed to be present as part of first level of parameters, `key: `keyname``",
             "type": "dictionary",
+            "key": "keyname",
             "optional": "true"
         }
     }
