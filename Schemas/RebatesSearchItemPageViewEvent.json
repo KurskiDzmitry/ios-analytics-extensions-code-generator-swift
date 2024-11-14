@@ -31,7 +31,7 @@
             "type": "objectArray",
             "optional": "false",
             "items": {
-                "title": "productItem",
+                "title": "ProductItem",
                 "type": "object",
                 "properties": {
                     "id": {
